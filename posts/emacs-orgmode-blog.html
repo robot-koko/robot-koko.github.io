@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!-- 2026-11-12 四 16:07 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs和orgmode静态博客网站 | ROBOTKOKO</title>
+<meta name="author" content="koko" />
+<meta name="description" content="
+用emacs和orgmode配置写博客网站，专注于内容本身而不是网站" />
+<meta name="keywords" content=" emacs,orgmode,emacs orgmode,orgmode blog,emacs博客,orgmode博客" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<div id="mip-top">
+    <div id="mip-header">
+        <a href="../index.html"><h1>ROBOTKOKO</h1></a></div>
+    <div id="topnav">
+        <div id="nav-about"><a href="../about.html">关于</a></div>
+        <div id="nav-archive"><a href="../archives.html">归档</a></div>
+        <div id="nav-category"><a href="../categories.html">分类</a></div>
+    </div>
+</div>
+<div id="outline-container-orgb939dc0" class="outline-2">
+<h2 id="orgb939dc0">Emacs和orgmode静态博客网站</h2>
+<div class="outline-text-2" id="text-orgb939dc0">
+<p>
+<b><b>Saturday, October 31, 2026</b></b>
+</p>
+
+<p>
+emacs和orgmode配置一个静态的博客网站。
+</p>
+</div>
+<div id="outline-container-orgb0f1cbc" class="outline-4">
+<h4 id="orgb0f1cbc">emacs配置</h4>
+<div class="outline-text-4" id="text-orgb0f1cbc">
+<ul class="org-ul">
+<li>emacs单独配置一份profile, 比如blog的el文件，每次打开的时候用emacs &#x2013;with-profile blog</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge6f0f03" class="outline-4">
+<h4 id="orge6f0f03">Tramp发布网站</h4>
+<div class="outline-text-4" id="text-orge6f0f03">
+<ul class="org-ul">
+<li>在mac环境下，可以brew install inetutil(含ftp)</li>
+<li>用C-x d打开public<sub>html的文件夹</sub></li>
+<li>用C-x 4 d打开远程虚拟主机的路径</li>
+<li>在public<sub>html窗口里</sub>，用m标记需要上传的文件，选好后按shift+c,在底部栏用上下箭头选择远程服务器地址，回车上传。（注意在远程虚拟主机列出的目录里面可能看不到文件夹，可以在底部栏输入文件夹名称去进入，并把public<sub>html里面的文件夹也对应打开</sub>。）</li>
+</ul>
+
+
+<p>
+<i>分类: <a href="../tags/emacs.html">emacs</a></i>
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
